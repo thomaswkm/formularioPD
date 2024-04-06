@@ -1,55 +1,58 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+.container{
+    margin-top: 75px;
+    padding: 0 100px;
 }
 
-#form {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+.box-1{
+    height: 600px;
+    width: 800px;
+    background-color: rgba(213, 43, 30, 0.5);
+    border-radius: 25px;
+    float: left;
 }
 
-h1 {
+.box-2{
+    height: 600px;
+    width: 800px;
+    background-color: rgb(0, 57, 166,0.5);
+    border-radius: 25px;
+    float: right;
+}
+
+
+.centered-header{
     text-align: center;
-    color: #333;
 }
 
-form {
-    margin-top: 20px;
+.fondo{
+    background-image: url("resources/cancha.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #666;
-}
-
-select {
-    width: 100%;
-    padding: 8px;
+select{
+    width: 50%;
+    height: 25px;
+    margin-left: 175px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    background-color: #d9dde0;
+    color: rgb(71, 71, 71);
+    border: none;
     border-radius: 5px;
-    box-sizing: border-box;
+    text-align: center;
+
 }
 
 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
+    width: 20%;
+    height: 50px;
+    margin-left: 650px;
+    margin-top: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
+

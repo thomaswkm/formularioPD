@@ -7,8 +7,8 @@ class ConexionBD {
     private function __construct() {
         $ip = "localhost";
         $usuario = "root";
-        $password = "G#5tRd@9qXs!";
-        $database = "formulario";
+        $password = "";
+        $database = "Jugadores";
         $this->conexion = new mysqli($ip, $usuario, $password, $database);
 
         if ($this->conexion->connect_error) {
