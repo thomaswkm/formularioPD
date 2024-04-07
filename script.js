@@ -32,7 +32,19 @@ class Formulario {
         }
     }
 
+    validar(){
+        if(this.formacion1.seleccionados.length==11 && this.formacion2.seleccionados.length==11){
+            activarSelects();
+            return true;
+        }else{
+            alert("Ambos equipos deben tener 11 jugadores")
+            return false;
+        }
+    }
+
 }
+
+
 
 function activarSelects() {
     for (var i = 1; i <= 2; i++) {
@@ -44,8 +56,6 @@ function activarSelects() {
         }
     }
 }
-
-
 var formacion1 = new Formacion([]);
 var formacion2 = new Formacion([]);
 var formulario = new Formulario(formacion1, formacion2);

@@ -13,7 +13,7 @@
     <h1 class="centered-header">Formación vs Formación - Selección Chilena</h1>
     <div class="container">
         <?php include ("generarOpcionPorPosicion.php"); ?>
-        <form name="form" method="POST" action="procesar_formulario.php" onsubmit="activarSelects()">
+        <form name="form" method="POST" action="procesar_formulario.php" onsubmit="return formulario.validar()">
             <div class="box-1">
                 <div id="form">
                     <h2 class="centered-header">Formación 1</h2>
